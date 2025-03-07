@@ -1,20 +1,39 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# apitempo-azdocker
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
+![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Descrição
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
+Este projeto implementa uma API de previsão do tempo utilizando .NET e Docker, com integração para execução em Azure Pipelines.
+
+## Funcionalidades
+
+- **GET /weatherforecast**: Retorna a lista de previsões do tempo.
+- **GET /weatherforecast/{id}**: Retorna a previsão do tempo para um local específico com base no ID.
+  
+## Estrutura do Projeto
+
+- **API/**: Contém a implementação da API.
+- **Dockerfile**: Arquivo de configuração do Docker para construir a imagem da API.
+- **appsettings.json**: Configurações para o ambiente de execução da API.
+- **Docker-Compose.yml**: Configuração para rodar o contêiner Docker e facilitar a execução no ambiente local.
+
+## Tecnologias Utilizadas
+
+- **.NET**: Framework utilizado para implementar a API.
+- **C#**: Linguagem principal do projeto.
+- **Docker**: Utilizado para containerização da API.
+- **Azure Pipelines**: Ferramenta de integração contínua para deploy da aplicação.
+  
+## Como Executar
+
+### Pré-requisitos:
+
+- [Docker](https://www.docker.com/get-started)
+- [.NET SDK](https://dotnet.microsoft.com/download)
 - [Chakra Core](https://github.com/Microsoft/ChakraCore)
